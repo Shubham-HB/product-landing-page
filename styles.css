@@ -1,6 +1,8 @@
 body{
     background-color: #eee;
     font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 #header{
     position: fixed;
@@ -12,6 +14,7 @@ body{
     min-height: 75px;
     background-color: #eee;
 }
+
 #logo{
     width: 60vw;
 }
@@ -144,4 +147,47 @@ body{
     align-self: center;
     background-color: #f1c40f;
     border: none;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+    background-color: #ddd;
+    margin-top: 30px;
+    padding:20px
+    /* height: 20vh; */
+}
+.footer ul{
+    list-style: none;
+    margin: 0 10px;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer ul li{
+    padding:5px;
+}
+.footer ul a{
+    text-decoration: none;
+    color: black;
+}
+.footer span{
+    font-size: 0.9em;
+    color: #444;
+}
+
+
+@media screen and (max-width: 600px) {
+    #header{
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        height:max-content;
+        padding: 20px;
+    }
+    #email-form{
+        margin-top: 20vh;
+    }
 }
