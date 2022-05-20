@@ -9,6 +9,7 @@ body{
     align-items: center;
     padding: 0 20px;
     min-height: 75px;
+    background-color: #eee;
 }
 #logo{
     width: 60vw;
@@ -84,4 +85,13 @@ body{
 }
 .desc h2,p{
     margin: 0;
+}
+
+#how-it-works{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#how-it-works iframe{
+    width: 60vw;
 }
