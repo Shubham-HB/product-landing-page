@@ -35,7 +35,7 @@ body{
     /* display: inline-block; */
     margin: 0px 15px;
 }
-section{
+#email-form{
     margin-top: 75px; /* overlaps on header */
     display: flex;
     flex-direction: column;
@@ -61,4 +61,27 @@ section{
     font-weight: 900;
     text-transform: uppercase;
     background-color: #f1c40f;
+}
+
+.grid{
+    display: flex;
+}
+.icon{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon i{
+    color: darkorange;
+}
+.desc{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+}
+.desc h2,p{
+    margin: 0;
 }
