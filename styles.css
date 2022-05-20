@@ -1,0 +1,40 @@
+body{
+    background-color: #eee;
+}
+#header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-height: 75px;
+}
+#logo{
+    width: 60vw;
+}
+#logo img{
+    display: flex;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    align-self: center;
+}
+#nav-bar ul{
+    width: 35vw;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+.nav-link a{
+    text-decoration: none;
+    color: black;
+}
+.nav-link{
+    /* display: inline-block; */
+    margin: 0px 15px;
+}
+section{
+    margin-top: 75px;
+}
