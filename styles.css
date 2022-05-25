@@ -7,6 +7,11 @@ body{
 .page-container{
     margin: 0 259px;
 }
+
+/**************************************************************
+*   HEADER SECTION
+***************************************************************
+*/
 .header{
     position: fixed;
     top: 0;
@@ -45,6 +50,12 @@ body{
     text-transform: capitalize;
     margin: 0px 15px;
 }
+
+/**************************************************************
+*   EMAIL FORM SECTION
+***************************************************************
+*/
+
 .email-form-section{
     margin-top: 75px; /* overlaps on header */
     display: flex;
@@ -72,6 +83,11 @@ body{
     text-transform: uppercase;
     background-color: #f1c40f;
 }
+
+/**************************************************************
+*   FEATURES SECTION
+***************************************************************
+*/
 
 .features{
     display: flex;
@@ -102,6 +118,11 @@ body{
     margin: 0;
 }
 
+/**************************************************************
+*   HOW IT WORKS SECTION
+***************************************************************
+*/
+
 .how-it-works{
     display: flex;
     justify-content: center;
@@ -110,6 +131,11 @@ body{
 .how-it-works__video{
     width: 560px;
 }
+
+/**************************************************************
+*   PRICING SECTION
+***************************************************************
+*/
 
 .pricing{
     margin-top:55px;
@@ -160,6 +186,11 @@ body{
     border: none;
 }
 
+/**************************************************************
+*   FOOTER SECTION
+***************************************************************
+*/
+
 .footer{
     display: flex;
     flex-direction: column;
@@ -190,6 +221,12 @@ body{
 }
 
 
+/**************************************************************
+*   MOBILE RESPONSIVE -- BREAKPOINT 900PX
+***************************************************************
+*/
+
+
 @media screen and (max-width: 900px) {
     /* #header{
         flex-direction: column;
@@ -202,6 +239,9 @@ body{
         margin: 0;
         padding: 5%;
     }
+
+    /* ***** HEADER SECTION ***** */
+
     .header{
         flex-direction: column;
         width: 100%;
@@ -220,12 +260,17 @@ body{
     .header__nav-bar-list{
         width: 100%;
     }
+
+    /* ***** EMAIL FORM SECTION ***** */
+
     .email-form-section{
         margin-top: 15vh;
     }
     .email-form-section__heading{
         text-align: center;
     }
+
+    /* ***** FEATURES SECTION ***** */
 
     .features__grid{
         flex-direction: column;
@@ -234,6 +279,8 @@ body{
         text-align: center;
         margin: 2.5vh 0;
     }
+
+    /* ***** PRICING SECTION ***** */
 
     .pricing{
         flex-direction: column;
@@ -244,6 +291,8 @@ body{
     .pricing__product{
         width: 60vw;
     }
+
+    /* ***** FOOTER SECTION ***** */
 
     .footer{
         align-items: center;
