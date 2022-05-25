@@ -12,123 +12,123 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-    <header id="header">
-        <div id="logo">
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo" id="header-img">
+    <header id="header" class="header">
+        <div id="logo" class="header__logo-container">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo" id="header-img" class="header__logo">
         </div>
-        <nav id="nav-bar">
-            <ul>
-                <li><a class="nav-link" href="#features">Features</a></li>
-                <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        <nav id="nav-bar" class="header__nav-bar">
+            <ul class="header__nav-bar-list">
+                <li><a class="header__nav-link" href="#features">Features</a></li>
+                <li><a class="header__nav-link" href="#how-it-works">How It Works</a></li>
+                <li><a class="header__nav-link" href="#pricing">Pricing</a></li>
             </ul>
         </nav>
     </header>
-    <section id="email-form">
-        <h2>Handcrafted, home-made masterpieces</h2>
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-            <input type="email" name="email" id="email" placeholder="Enter your email address">
-            <input type="submit" value="Get Started" id="submit">
+    <section id="email-form" class="email-form-section">
+        <div class="email-form-section__heading">
+            <h2>Handcrafted, home-made masterpieces</h2>
+        </div>
+        <form action="https://www.freecodecamp.com/email-submit" id="form" class="email-form-section__form">
+            <input type="email" name="email" id="email" placeholder="Enter your email address" class="email-form-section__email-input">
+            <input type="submit" value="Get Started" id="submit" class="email-form-section__submit">
         </form>
     </section>
     <div class="page-container">
-
-    
-    <main>
-        <section id="features" class="features">
-            <div class="grid">
-                <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
-                <div class="desc">
-                <h2>Premium Materials</h2>
-                <p>
-                    Our trombones use the shiniest brass which is sourced locally.
-                    This will increase the longevity of your purchase.
-                </p>
+        <main>
+            <section id="features" class="features">
+                <div class="features__grid">
+                    <div class="features__icon"><i class="fa fa-3x fa-fire"></i></div>
+                    <div class="desc">
+                    <h2>Premium Materials</h2>
+                    <p>
+                        Our trombones use the shiniest brass which is sourced locally.
+                        This will increase the longevity of your purchase.
+                    </p>
+                    </div>
                 </div>
-            </div>
-            <div class="grid">
-                <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
-                <div class="desc">
-                <h2>Fast Shipping</h2>
-                <p>
-                    We make sure you recieve your trombone as soon as we have
-                    finished making it. We also provide free returns if you are not
-                    satisfied.
-                </p>
+                <div class="features__grid">
+                    <div class="features__icon"><i class="fa fa-3x fa-truck"></i></div>
+                    <div class="desc">
+                    <h2>Fast Shipping</h2>
+                    <p>
+                        We make sure you recieve your trombone as soon as we have
+                        finished making it. We also provide free returns if you are not
+                        satisfied.
+                    </p>
+                    </div>
                 </div>
-            </div>
-            <div class="grid">
-                <div class="icon">
-                <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+                <div class="features__grid">
+                    <div class="features__icon">
+                    <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+                    </div>
+                    <div class="desc">
+                    <h2>Quality Assurance</h2>
+                    <p>
+                        For every purchase you make, we will ensure there are no damages
+                        or faults and we will check and test the pitch of your
+                        instrument.
+                    </p>
+                    </div>
                 </div>
-                <div class="desc">
-                <h2>Quality Assurance</h2>
-                <p>
-                    For every purchase you make, we will ensure there are no damages
-                    or faults and we will check and test the pitch of your
-                    instrument.
-                </p>
-                </div>
-            </div>
-        </section>
-        <section id="how-it-works">
-            <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen="">
-    
-            </iframe>
-        </section>
+            </section>
+            <section id="how-it-works" class="how-it-works">
+                <iframe id="video" class="how-it-works__video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen="">
         
-        <section id="pricing">
-            <div class="product">
-                <div class="product-name-container">
-                    <h2 class="product-name">TENOR TROMBONE</h2>
+                </iframe>
+            </section>
+            
+            <section id="pricing" class="pricing">
+                <div class="pricing__product">
+                    <div class="product__name-container">
+                        <h2 class="product__name">TENOR TROMBONE</h2>
+                    </div>
+                    <h3 class="product__price">$600</h3>
+                    <ol class="product__features-list">
+                        <li class="product__features">Lorem ipsum.</li>
+                        <li class="product__features">Lorem ipsum.</li>
+                        <li class="product__features">Lorem ipsum.</li>
+                        <li class="product__features">Lorem ipsum.</li>
+                    </ol>
+                    <button class="product__select-btn">select</button>
                 </div>
-                <h3 class="product-price">$600</h3>
-                <ol class="product-features">
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                </ol>
-                <button class="product-select-btn">select</button>
-            </div>
-            <div class="product">
-                <div class="product-name-container">
-                    <h2 class="product-name">BASS TROMBONE</h2>
+                <div class="pricing__product">
+                    <div class="product__name-container">
+                        <h2 class="product__name">BASS TROMBONE</h2>
+                    </div>
+                    <h3 class="product__price">$900</h3>
+                    <ol class="product__features-list">
+                        <li class="product__features">Lorem ipsum.</li>
+                        <li class="product__features">Lorem ipsum.</li>
+                        <li class="product__features">Lorem ipsum.</li>
+                        <li class="product__features">Lorem ipsum.</li>
+                    </ol>
+                    <button class="product__select-btn">select</button>
                 </div>
-                <h3 class="product-price">$900</h3>
-                <ol class="product-features">
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                </ol>
-                <button class="product-select-btn">select</button>
-            </div>
-            <div class="product">
-                <div class="product-name-container">
-                    <h2 class="product-name">VALVE TROMBONE</h2>
+                <div class="pricing__product">
+                    <div class="product__name-container">
+                        <h2 class="product__name">VALVE TROMBONE</h2>
+                    </div>
+                    <h3 class="product__price">$1200</h3>
+                    <ol class="product__features-list">
+                        <li class="product__features">Lorem ipsum.</li>
+                        <li class="product__features">Lorem ipsum.</li>
+                        <li class="product__features">Lorem ipsum.</li>
+                        <li class="product__features">Lorem ipsum.</li>
+                    </ol>
+                    <button class="product__select-btn">select</button>
                 </div>
-                <h3 class="product-price">$1200</h3>
-                <ol class="product-features">
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                </ol>
-                <button class="product-select-btn">select</button>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
     <footer class="footer">
-        <ul class="footer-links">
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Contact</a></li>
+        <ul class="footer__links-list">
+            <li class="footer__links"><a href="#">Privacy</a></li>
+            <li class="footer__links"><a href="#">Terms</a></li>
+            <li class="footer__links"><a href="#">Contact</a></li>
         </ul>
-        <span>
+        <span class="footer__copyright">
             Copyright 2016, Original Trombones
         </span>
     </footer>
-    </div>
 </body>
 </html>

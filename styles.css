@@ -7,7 +7,7 @@ body{
 .page-container{
     margin: 0 259px;
 }
-#header{
+.header{
     position: fixed;
     top: 0;
     display: flex;
@@ -18,52 +18,49 @@ body{
     background-color: #eee;
 }
 
-#logo{
+.header__logo-container{
     width: 60vw;
 }
-#logo img{
+.header__logo{
     display: flex;
     width: 100%;
     height: auto;
     max-width: 300px;
     align-self: center;
 }
-#nav-bar{
+.header__nav-bar{
     display: fixed;
     top: 0;
 }
-#nav-bar ul{
+.header__nav-bar-list{
     width: 35vw;
     list-style-type: none;
     display: flex;
     justify-content: space-around;
     padding: 0px;
 }
-.nav-link{
+.header__nav-link{
     text-decoration: none;
     color: black;
     text-transform: capitalize;
-}
-.nav-link{
-    /* display: inline-block; */
     margin: 0px 15px;
 }
-#email-form{
+.email-form-section{
     margin-top: 75px; /* overlaps on header */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#form{
+.email-form-section__form{
     display: flex;
     flex-direction: column;
 }
-#form input[type="email"]{
-    width: 275px;
+.email-form-section__email-input{
+    width: 274px;
     padding: 5px;
     margin: 5px;
 }
-#form input[type="submit"]{
+.email-form-section__submit{
     max-width: 150px;
     width: 150px;
     align-self: center;
@@ -82,16 +79,16 @@ body{
     flex-direction: column;
 }
 
-.grid{
+.features__grid{
     display: flex;
 }
-.icon{
+.features__icon{
     width: 20vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.icon i{
+.fa{
     color: darkorange;
 }
 .desc{
@@ -105,22 +102,22 @@ body{
     margin: 0;
 }
 
-#how-it-works{
+.how-it-works{
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
-#how-it-works iframe{
+.how-it-works__video{
     width: 560px;
 }
 
-#pricing{
+.pricing{
     margin-top:55px;
     display: flex;
     justify-content: space-around;
 }
 
-.product{
+.pricing__product{
     /* height: 20vh;*/
     width: calc(100% / 3);
     border: 1px solid black;
@@ -130,29 +127,29 @@ body{
     margin: 10px;
     border-radius: 3px;
 }
-.product-name-container{
+.product__name-container{
     background-color: #ddd;
 }
-.product-name{
+.product__name{
     text-transform: uppercase;
     font-size: 1em;
     text-align: center;
 }
-.product-price{
+.product__price{
     text-align: center;
     font-size: 1.5em;
     margin: 15px 0 0 0;
 }
-.product-features{
+.product__features-list{
     list-style: none;
     margin: 15px 0;
     padding: 0;
     text-align: center;
 }
-.product-features li{
+.product__features{
     padding: 5px 0;
 }
-.product-select-btn{
+.product__select-btn{
     margin: 15px 0;
     padding: 10px 20px;
     width: max-content;
@@ -173,27 +170,27 @@ body{
     padding:20px
     /* height: 20vh; */
 }
-.footer ul{
+.footer__links-list{
     list-style: none;
     margin: 0 10px;
     padding: 5px 5px;
     display: flex;
     justify-content: space-between;
 }
-.footer ul li{
+.footer__links{
     padding:5px;
 }
-.footer ul a{
+.footer__links a{
     text-decoration: none;
     color: black;
 }
-.footer span{
+.footer__copyright{
     font-size: 0.9em;
     color: #444;
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     /* #header{
         flex-direction: column;
         width: 100vw;
@@ -201,7 +198,54 @@ body{
         height:max-content;
         padding: 20px;
     } */
-    #email-form{
-        margin-top: 20vh;
+    .page-container{
+        margin: 0;
+        padding: 5%;
+    }
+    .header{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 0 10px 0;
+        height: auto;
+    }
+    .header__logo-container{
+        order: 2;
+        width: auto;
+        padding: 10px;
+        
+    }
+    .header__nav-bar{
+        order: 3;
+    }
+    .header__nav-bar-list{
+        width: 100%;
+    }
+    .email-form-section{
+        margin-top: 15vh;
+    }
+    .email-form-section__heading{
+        text-align: center;
+    }
+
+    .features__grid{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: 2.5vh 0;
+    }
+
+    .pricing{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;  
+    }
+    .pricing__product{
+        width: 60vw;
+    }
+
+    .footer{
+        align-items: center;
     }
 }
